@@ -21,7 +21,6 @@
             <p class="badge bg-secondary">Rock</p>
             <p class="badge bg-secondary">Porções</p>
             <p class="badge bg-secondary">+ Rock</p>
-    
         </div>
         <div>
             <h1><a href="img/Cardápio.pdf"><body>
@@ -38,6 +37,29 @@
                                 </h5>
             </div>
         </div>
+        <div id="cardapio" class="text-center">
+    <h2>Cardápio</h2>
+    <img id="slide" src="img/cardapio1.jpg" alt="Cardápio" class="img-fluid rounded shadow" style="max-height: 600px;">
+</div>
+
+<script>
+    const imagens = [
+        'img/cardapio1.jpg',
+        'img/cardapio2.jpg',
+        'img/cardapio3.jpg',
+        'img/cardapio4.jpg',
+        'img/cardapio5.jpg'
+    ];
+
+    let indice = 0;
+    const slide = document.getElementById('slide');
+
+    setInterval(() => {
+        indice = (indice + 1) % imagens.length;
+        slide.src = imagens[indice];
+    }, 4000); // troca a cada 4 segundos
+</script>
+
         
     </header>
     
